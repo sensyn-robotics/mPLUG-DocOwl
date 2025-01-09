@@ -27,5 +27,5 @@ torch.cuda.empty_cache()
 
 docowl = DocOwlInfer(ckpt_path='mPLUG/DocOwl2')
 
-answer = docowl.inference(images, query='how can we compute 衝撃係数 for 鋼端 case？')
+answer = docowl.inference(images, query='表8.3.2を生成するtex fileを書いて')
 torch.cuda.empty_cache()
