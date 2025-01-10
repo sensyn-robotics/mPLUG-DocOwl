@@ -19,7 +19,7 @@ class DocOwlInfer():
 # get current directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
 images = [
-        f'{current_dir}/examples/dourohashishihousho_1_p104.png',
+        f'{current_dir}/examples/douro_eng.png',
     ]
 
 # Free GPU memory
@@ -27,5 +27,5 @@ torch.cuda.empty_cache()
 
 docowl = DocOwlInfer(ckpt_path='mPLUG/DocOwl2')
 
-answer = docowl.inference(images, query='表8.3.2を生成するtex fileを書いて')
+answer = docowl.inference(images, query='please write the impact coefficient equation in tex format for steel bridge?')
 torch.cuda.empty_cache()
